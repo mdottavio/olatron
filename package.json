@@ -1,0 +1,37 @@
+{
+  "name": "olatron",
+  "productName": "Olatron",
+  "version": "0.0.1",
+  "description": "Olapic Distribuible Demo",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "dottavio/olatron",
+  "author": {
+    "name": "dottavio",
+    "email": "dottavio@gmail.com",
+    "url": "https://www.olapic.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "./node_modules/electron-packager/cli.js . $npm_package_productName --prune --platform=darwin --arch=x64 --version=0.28.1"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app"
+  ],
+  "dependencies": {
+    "electron-debug": "^0.1.0",
+    "request": "^2.58.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^4.1.2",
+    "electron-prebuilt": "^0.28.1"
+  }
+}
